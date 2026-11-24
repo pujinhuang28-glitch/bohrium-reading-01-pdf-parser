@@ -1,0 +1,153 @@
+{
+  "_notice": "示意输出（EXAMPLE ONLY）。由 BERT 论文跑出后截断，用于说明字段形状；不是任何正式案例的结果。",
+  "case_id": "<case.json 里的 case_id>",
+  "status": "success",
+  "input": {
+    "backend": "pymupdf",
+    "pages": 16,
+    "backend_chain": [
+      "pymupdf"
+    ]
+  },
+  "document": {
+    "title": "BERT: Pre-training of Deep Language Bidirectional Transformers for U nderstanding",
+    "body_font_size": 10.9
+  },
+  "sections": [
+    {
+      "id": "sec-01",
+      "title": "Abstract",
+      "level": 1,
+      "page": 1,
+      "bbox": [
+        158.89,
+        224.32,
+        203.38,
+        236.28
+      ],
+      "paragraphs": [
+        {
+          "id": "p1-b4-p1",
+          "text": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be ﬁnetuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-speciﬁc architecture modiﬁcations. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+          "page": 1,
+          "bbox": [
+            89.01,
+            245.82,
+            273.26,
+            546.82
+          ],
+          "size": 10.0
+        }
+      ]
+    },
+    {
+      "id": "sec-02",
+      "title": "1 Introduction",
+      "level": 1,
+      "page": 1,
+      "bbox": [
+        72.0,
+        557.1,
+        154.81,
+        569.06
+      ],
+      "paragraphs": [
+        {
+          "id": "p1-b6-p1",
+          "text": "Language model pre-training has been shown to be effective for improving many natural language processing tasks (Dai and Le, 2015; Peters et al., 2018a; Radford et al., 2018; Howard and Ruder, 2018). These include sentence-level tasks such as natural language inference (Bowman et al., 2015; Williams et al., 2018) and paraphrasing (Dolan and Brockett, 2005), which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce ﬁne-grained output at the token level (Tjong Kim Sang and De Meulder, 2003; Rajpurkar et al., 2016).",
+          "page": 1,
+          "bbox": [
+            72.0,
+            578.55,
+            290.27,
+            765.6
+          ],
+          "size": 10.9
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "tbl-01",
+      "page": 6,
+      "bbox": [
+        72.0,
+        63.24,
+        525.54,
+        153.53
+      ],
+      "n_rows": 7,
+      "n_cols": 10,
+      "confidence": "high",
+      "caption": "Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard).",
+      "markdown": "| System | MNLI-(m/mm) | QQP | QNLI | SST-2 | CoLA | STS-B | MRPC | RTE | Average |\n|---|---|---|---|---|---|---|---|---|---|\n|  | 392k | 363k | 108k | 67k | 8.5k | 5.7k | 3.5k | 2.5k | - |\n| Pre-OpenAI SOTA | 80.6/80.1 | 66.1 | 82.3 | 93.2 | 35.0 | 81.0 | 86.0 | 61.7 | 74.0 |\n| BiLSTM+ELMo+Attn | 76.4/76.1 | 64.8 | 79.8 | 90.4 | 36.0 | 73.3 | 84.9 | 56.8 | 71.0 |\n| OpenAI GPT | 82.1/81.4 | 70.3 | 87.4 | 91.3 | 45.4 | 80.0 | 82.3 | 56.0 | 75.1 |\n| BERTBASE | 84.6/83.4 | 71.2 | 90.5 | 93.5 | 52.1 | 85.8 | 88.9 | 66.4 | 79.6 |\n| BERTLARGE | 86.7/85.9 | 72.1 | 92.7 | 94.9 | 60.5 | 86.5 | 89.3 | 70.1 | 82.1 |"
+    }
+  ],
+  "figures": [
+    {
+      "id": "fig-01",
+      "page": 3,
+      "bbox": [
+        72.0,
+        241.34,
+        525.55,
+        269.02
+      ],
+      "caption": "Figure 1: Overall pre-training and ﬁne-tuning procedures for BERT. Apart from output layers, the same architec-",
+      "caption_ref": {
+        "page": 3,
+        "bbox": [
+          72.0,
+          259.06,
+          525.55,
+          269.02
+        ]
+      },
+      "graphic": "vector-or-unknown",
+      "located_by": "caption-anchor (region estimated from nearest text above)"
+    }
+  ],
+  "formulas": [
+    {
+      "text": "H = 768 H = 1024 i.e., 3072 for the and 4096 for the . 4We note that in the literature the bidirectional Trans-",
+      "equation_number": null,
+      "page": 3,
+      "bbox": [
+        307.28,
+        745.08,
+        525.54,
+        765.13
+      ],
+      "signal": "font"
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-001",
+      "number": null,
+      "raw": "Alan Akbik, Duncan Blythe, and Rola 2018. Contextual string embeddings f labeling. In Proceedings of the 27th I Conference on Computational Lingui 1638–1649.",
+      "year": "2018",
+      "page": 10
+    }
+  ],
+  "coverage": {
+    "pages": 16,
+    "pages_with_text_layer": 16,
+    "blocks": 461,
+    "chars": 57422,
+    "sections": 12,
+    "tables": 6,
+    "figures": 5,
+    "formulas": 7,
+    "references": 53,
+    "running_headers_footers_removed": 0
+  },
+  "uncertainty": [
+    {
+      "item": "formulas",
+      "reason": "公式按版面元素定位，未还原 LaTeX 语义",
+      "impact": "符号与上下标以原文为准，可复核但不可直接计算"
+    }
+  ]
+}
